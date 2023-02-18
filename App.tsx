@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import Routes from './src/services/Routes';
+import { AuthProvider, ThemeProvider } from './src/contexts';
+import { Montserrat_300Light, Montserrat_400Regular, Montserrat_600SemiBold, useFonts } from '@expo-google-fonts/montserrat';
 
-export default function App() {
+const App = () => {
+
+  const [ fontsLoaded ] = useFonts({
+    'MontserratLight': Montserrat_300Light,
+    'MontserratRegular': Montserrat_400Regular,
+    'MontserratSemiBold': Montserrat_600SemiBold,
+  });
+
+  if(!fontsLoaded)
+    return <></>;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <ThemeProvider>
+        <AuthProvider>
+          <Routes />
+          {/* <Footer /> */}
+        </AuthProvider>
+      </ThemeProvider>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
