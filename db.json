@@ -28,25 +28,27 @@
         { "id": 27, "chave": "F5672347", "equipe": 2, "apto": false, "quantidadeRealizada": 0},
         { "id": 28, "chave": "F6813980", "equipe": 2, "apto": false, "quantidadeRealizada": 0},
         { "id": 29, "chave": "F8216861", "equipe": 3, "apto": false, "quantidadeRealizada": 0},
-        { "id": 30, "chave": "F8467936", "equipe": 3, "apto": false, "quantidadeRealizada": 0}
+        { "id": 30, "chave": "F8467936", "equipe": 3, "apto": false, "quantidadeRealizada": 0},
+        { "id": 31, "chave": "F0320449", "equipe": 1, "apto": false, "quantidadeRealizada": 0},
+        { "id": 32, "chave": "F5290798", "equipe": 1, "apto": false, "quantidadeRealizada": 0}
     ],
 
     "ausencias": [
-        { "id": 1, "tipo": "ferias", "data": "30/03/2023"},
-        { "id": 1, "tipo": "ferias", "data": "31/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "01/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "02/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "03/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "04/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "05/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "06/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "07/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "08/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "09/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "10/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "11/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "12/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "13/04/2023"},
-        { "id": 1, "tipo": "ferias", "data": "14/04/2023"}
+        { "id": 1, "tipo": "ferias", "data": "2023-03-16"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-17"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-18"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-19"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-20"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-21"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-22"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-23"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-24"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-25"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-26"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-27"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-28"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-29"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-30"},
+        { "id": 1, "tipo": "ferias", "data": "2023-03-31"}
     ]
 }

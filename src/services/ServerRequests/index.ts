@@ -1,7 +1,7 @@
 import FuncionarioProps from "../../types/FuncionarioProps";
 
 export default class ServerRequest {
-    static baseURL = 'http://localhost:3000';
+    static baseURL = 'https://my-json-server.typicode.com/pejoota/tri-planner';
 
     static GETFromServer = async (endpoint: string): Promise<FuncionarioProps[]> => {
         const response = await fetch(`${ServerRequest.baseURL}/${endpoint}`,{

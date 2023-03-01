@@ -1,28 +1,40 @@
 import Colors  from "./Colors";
 
-const ColorScheme: any = {
+const ColorScheme = {
     dark: {
         primaryBackgroundColor: Colors.black,
         secondaryBackgroundColor: Colors.darkGrey,
 
         headerColor: Colors.wine, 
+        headerTextColor: Colors.white,
     
         primaryTextColor: Colors.white,
-        secondaryTextColor: Colors.wine,
+        secondaryTextColor: Colors.black,
     
         highlightBackgroundColor: Colors.lightOrange,
+
+        ferias: Colors.lightBlue,
+        bancoDeHoras: Colors.lightGreen,
+        abono: Colors.lightRed,
+        tri: Colors.lightPink,
     },
 
     light: {
         primaryBackgroundColor: Colors.white,
         secondaryBackgroundColor: Colors.offWhite,
 
-        headerColor: Colors.lightWine, 
+        headerColor: Colors.wine, 
+        headerTextColor: Colors.white,
     
         primaryTextColor: Colors.black,
-        secondaryTextColor: Colors.lightWine,
+        secondaryTextColor: Colors.white,
     
-        highlightBackgroundColor: Colors.lightYellow,
+        highlightBackgroundColor: Colors.lightOrange,
+
+        ferias: Colors.darkBlue,
+        bancoDeHoras: Colors.darkGreen,
+        abono: Colors.darkRed,
+        tri: Colors.darkPink,
     }
 }
 

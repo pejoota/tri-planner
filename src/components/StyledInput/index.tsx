@@ -3,7 +3,8 @@ import InputProps from "../../types/InputProps";
 
 const StyledInput = styled.TextInput<Partial<InputProps>>`
     height: 7%;
-    margin: 4.5%;
+    margin: 5%;
+    margin-bottom: 0%;
     background-color: ${({ backgroundColor }) => backgroundColor};
     padding: 10px;
     color: ${({ textColor }) => textColor};

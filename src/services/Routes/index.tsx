@@ -6,12 +6,14 @@ import { AuthContext, ThemeContext } from "../../contexts";
 import SunSVG from "../../components/SunSVG";
 import MoonSVG from "../../components/MoonSVG";
 import ExitSVG from "../../components/ExitSVG";
+import { useNavigation } from "@react-navigation/native";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const Routes = () => {
     const { appColors, theme, changeTheme } = useContext(ThemeContext);
     const { user } = useContext(AuthContext)
+    const navigation = useNavigation();
 
     return (
         <Stack.Navigator
@@ -21,7 +23,7 @@ const Routes = () => {
                   backgroundColor: appColors.headerColor,
                 },
 
-                headerTintColor: appColors.primaryTextColor,
+                headerTintColor: appColors.headerTextColor,
                 headerTitleStyle: {
                     fontSize: 20,
                     fontFamily: 'MontserratSemiBold'
@@ -41,7 +43,7 @@ const Routes = () => {
                 },
                 headerLeft: () => <ExitSVG 
                     color={appColors.highlightBackgroundColor}
-                    onPress={ () => changeTheme() }
+                    onPress={ () => navigation.goBack() }
                 />
               }}
         >

@@ -2,6 +2,7 @@ import React, { ReactNode, createContext, useState } from 'react';
 import { useNavigation } from '@react-navigation/native'
 import AuthContextProps from '../../types/AuthContextProps';
 import ServerRequest from '../../services/ServerRequests';
+import db from '../../../db.json'
 
 export const AuthContext = createContext({} as AuthContextProps);
 
@@ -17,7 +18,8 @@ const AuthProvider = ({children}: props): JSX.Element => {
         chave = chave.toUpperCase()
 
         try {
-            const response = await ServerRequest.GETFromServer('funcionarios')
+            // const response = await ServerRequest.GETFromServer('funcionarios')
+            const response = db.funcionarios;
             if(response.find((funcionario: { chave: string; }) => funcionario.chave === chave)){
                 setUser(chave);
                 navigation.navigate("Home");
